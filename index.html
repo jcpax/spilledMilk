@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- tab icon for website <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />` -->
+	<title>Spilled Milk Ice Cream</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="CSS/main.css">
+	<style type="text/css">
+		body{
+	background-image: url("CSS/Images/black-background.png")
+}
+	</style>
+	
+</head>
+
+<body>
+	<header>
+	<div class="navbar">
+			<div class="row"></div>
+			<div class="col-md-4">
+				<a href="index.html"><h3 class="nav-text">Home</h3></a>
+			</div>
+			<div class="col-md-4">
+				<a href="flavors.html"><h3 class="nav-text">Flavors</h3></a>
+			</div>
+			<div class="col-md-4">
+				<a href="about.html"><h3 class="nav-text">About</h3></a>
+			</div>
+		</div>
+	</header>
+	<section id="first">
+		<div class="row">
+		<div class="col-md-6">	<img class="spoon" src="CSS/Images/spoon3.png"></div>
+			<div class="col-md-6"><img class="main-logo" src="CSS/Images/logo-text-w.png"></div>
+			</div>
+	</section>
+	<section id="second">
+		<div class="row">
+		  <div class="col-md-4"><img class="cow" src="CSS/Images/cow-white.png"></div>
+		  <div class="col-md-8"><p class="cow2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+		</div>
+	</section>
+	<img class="hand" src="CSS/Images/hand2.png">
+	<section id="third">
+	<div class="row">
+	<div class="col-md-6">
+		<div class="w3-content w3-section" style="max-width:500px; margin-left: 30%;">
+  <img class="mySlides" src="CSS/Images/post1.png" style="width:100%">
+  <img class="mySlides" src="CSS/Images/post2.png" style="width:100%">
+  <img class="mySlides" src="CSS/Images/post3.png" style="width:100%">
+</div>
+</div>
+	<div class="social-div">
+				<img class="social" data-other-src="CSS/Images/facebook-h.png" src="CSS/Images/facebook.png">
+				<img class="social" data-other-src="CSS/Images/twitter-h.png" src="CSS/Images/twitter.png">
+				<img class="social" data-other-src="CSS/Images/instagram-h.png" src="CSS/Images/instagram.png">
+	</div>
+	</section>
+	
+<!-- START OF JAVASCRIPT -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+		    	$('img').bind('mouseenter mouseleave', function() {
+		    $(this).attr({
+		        src: $(this).attr('data-other-src') 
+		        , 'data-other-src': $(this).attr('src') 
+		    })
+		});
+		    	var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3500); // Change image every 2 seconds
+}
+    </script>
+</body>
+</html>
