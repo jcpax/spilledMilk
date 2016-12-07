@@ -5,18 +5,24 @@ section{
 	height: 100vh;
 	width: 100%;
 }
-
+.footer{
+	text-align: center;
+}
+.nav-text{
+	text-decoration: none;
+}
+.nav-text:hover{
+	color: grey;
+	text-decoration: none;
+}
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
 .main-logo{
 	float: right;
 	margin-right: 20%;
 	margin-top: 12%;
-		/*width: 40%;
-	float: right;position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; */
 }
 .cow{
 	width: 100%;
@@ -65,6 +71,11 @@ li{
 .icons{
 	margin-top: 5%;
 	margin-left: 23%;
+}
+.social2{
+	width: 7%;
+	float: left;
+	margin-left: 5%;
 }
 h1{
 	color: white;
