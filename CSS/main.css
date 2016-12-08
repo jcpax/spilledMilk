@@ -41,6 +41,9 @@ a:hover{
 	margin-left: 10%;
 	color: white;
 }
+.cow3{
+	visibility: hidden;
+}
 .spoon{
 	margin-top: 5%;
 	float: left;
@@ -207,7 +210,10 @@ li{
 	font-family: 'Muli', sans-serif;
 }
 .cow3{
-	visibility: hidden;
+	display: none;
+}
+.sm-review{
+	display: none;
 }
 /* Media Querries Needed */
 @media (max-width: 770px) {
