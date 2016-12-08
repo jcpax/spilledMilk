@@ -46,6 +46,9 @@ a:hover{
 	float: left;
 	width: 105%;
 }
+.breaker{
+	visibility: hidden;
+}
 .splash{
 	width: 45%;
 	margin-left: 10%;
@@ -110,6 +113,9 @@ color: white;
 .flavor-r{
 	float: right;
 }
+.desc-r2{
+	visibility: hidden;
+}
 .desc-r{
 	float: left;
 	margin-left: 10%;
@@ -151,7 +157,6 @@ color: white;
 .flav-div{
 	margin: auto;
 }
-/* Media Querries Needed */
 /* ABOUT PAGE CSS*/
 .abt1{
 	margin-top: 15%;
@@ -175,7 +180,7 @@ color: white;
 	border-radius: 25px;
 }
 .abt-p{
-	width: 90%;
+	width: 80%;
 }
 hr{
 border: 0;
@@ -201,3 +206,70 @@ li{
 	font-size: 150%;
 	font-family: 'Muli', sans-serif;
 }
+.cow3{
+	visibility: hidden;
+}
+/* Media Querries Needed */
+@media (max-width: 770px) {
+	/* HOME PAGE */
+section{
+	width: 100%;
+	height: 50%;
+}
+.main-logo{
+	width: 60%;
+}
+.cow{
+	visibility: hidden;
+	width: 55%;
+	margin-left: 30%;
+}
+.cow3{
+	width: 55%;
+	margin-left: 30%;
+	visibility: visible;
+	margin-bottom: 10%;
+}
+.cow2{
+	margin-top: -30%;
+}
+.w3-content{
+	visibility: hidden;
+}
+.hand{
+	margin-top: 5%;
+	width:60%;
+}
+.social-div{
+	margin-top: -50%;
+	width: 100%;
+	margin-bottom: 10%;
+	margin-left: 30%;
+}
+.social{
+	width: 10%;
+}
+.sm-review{
+	margin-top: 20%;
+	width: 30%;
+	margin-left: 10%;
+	visibility: visible;
+	font-size: 30px;
+}
+	/* FLAVORS PAGE */
+.flavor-r{
+	width: 97%;
+}
+.flavor-l{
+	width: 97%;
+}
+.breaker{
+	visibility: visible;
+	width: 95%;
+	height: 1px;
+	background-color: white;
+}
+	/* ABOUT PAGE */
+
+@media (max-width: 320px) {
+	/* HOME PAGE*/
