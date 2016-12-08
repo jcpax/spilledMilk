@@ -210,17 +210,17 @@ li{
 	font-family: 'Muli', sans-serif;
 }
 .cow3{
-	display: none;
+	visibility: hidden;
 }
 .sm-review{
-	display: none;
+	visibility: hidden;
 }
 /* Media Querries Needed */
 @media (max-width: 770px) {
 	/* HOME PAGE */
 section{
 	width: 100%;
-	height: 50%;
+	height: 25vh;
 }
 .main-logo{
 	width: 60%;
@@ -243,24 +243,17 @@ section{
 	visibility: hidden;
 }
 .hand{
+	visibility: hidden;
 	margin-top: 5%;
 	width:60%;
 }
 .social-div{
-	margin-top: -50%;
 	width: 100%;
 	margin-bottom: 10%;
 	margin-left: 30%;
 }
 .social{
 	width: 10%;
-}
-.sm-review{
-	margin-top: 20%;
-	width: 30%;
-	margin-left: 10%;
-	visibility: visible;
-	font-size: 30px;
 }
 	/* FLAVORS PAGE */
 .flavor-r{
